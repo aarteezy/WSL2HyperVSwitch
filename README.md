@@ -48,15 +48,6 @@ This recipe uses a Hyper-V virtual switch to bridge the WSL 2 network, providing
      [Network]
      DHCP=yes
      ```
-   - For static address configuration, use:
-     ```plaintext
-     [Match]
-     Name=eth0
-     [Network]
-     Address=192.168.x.xx/24
-     Gateway=192.168.x.x
-     DNS=192.168.x.x
-     ```
 
 7. **Link systemd Resolv.conf:**
    - Create a symbolic link to link resolv.conf from systemd:
